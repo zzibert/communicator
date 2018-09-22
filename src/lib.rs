@@ -1,18 +1,16 @@
-mod network {
-    fn connect() {
-
+pub mod client {
+    pub fn connect() {
     }
 }
 
-mod client {
-    fn connect(){
-        
+pub mod network {
+    pub fn connect() {
+    }
+    pub mod server {
+        pub fn connect() {
+        }
     }
 }
-
-
-
-
 
 #[cfg(test)]
 mod tests {
